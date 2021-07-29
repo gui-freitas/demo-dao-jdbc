@@ -26,6 +26,12 @@ public class Program {
 			System.out.println(obj);
 		}
 		
+		System.out.println();
+		System.out.println("=== TEST 3: department insert ===" );
+		Department newDepartment = new Department(null, "Finance");
+		departmentDao.insert(newDepartment);
+		System.out.println("Inserted! New id = " + newDepartment.getId());
+		
 		sc.close();
 	}
 }
